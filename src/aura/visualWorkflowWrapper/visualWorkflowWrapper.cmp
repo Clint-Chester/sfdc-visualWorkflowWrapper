@@ -1,0 +1,9 @@
+<aura:component implements="forceCommunity:availableForAllPageTypes" access="global" >
+    <aura:attribute name="flowName" type="String" description="The unique name of the flow."/>
+    <aura:attribute name="backgroundColour" type="String" default="None" description="The background colour of the flow." />
+    <aura:attribute name="redirectOptions" type="String" default="None" description="After the flow finishes, this variable holds how the flow should be redirected." />
+    <aura:attribute name="sObjectVariableName" type="String" default="" description="The name of the sObject variable defined in the flow. This variable will be used to navigate to the sObject record once the flow is finished." />
+    <aura:attribute name="urlName" type="String" default="/" description="The relative URL name you would like to redirect to." />
+    <aura:handler name="init" value="{!this}" action="{!c.init}" />
+    <lightning:flow aura:id="flowData" class="{!'bg-' + v.backgroundColour}" onstatuschange="{!c.handleStatusChange}" />
+</aura:component>

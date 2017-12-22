@@ -1,0 +1,7 @@
+<design:component label="Visual Workflow Wrapper">
+	<design:attribute name="flowName" label="Flow Name" required="true" description="Enter the unique name of the flow."/>
+    <design:attribute name="backgroundColour" label="Background Colour" required="true" datasource="None,White" default="None" />
+    <design:attribute name="redirectOptions" label="Redirect Options" required="true" datasource="None,sObject,URL" default="None" description="After the flow finishes, this variable holds how the flow should be redirected." />
+    <design:attribute name="sObjectVariableName" label="Flow sObject Variable Name" description="The name of the sObject variable defined in the flow. This variable will be used to navigate to the sObject record once the flow is finished." />
+    <design:attribute name="urlName" label="URL Name" default="/" description="The relative URL name you would like to redirect to." />
+</design:component>
