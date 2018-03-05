@@ -11,18 +11,18 @@
        src="https://raw.githubusercontent.com/afawcett/githubsfdeploy/master/deploy.png">
 </a>
 
-        <h2>Set Return Location</h2>
-        <p>There are a number of options that can be set to control the return behaviour of the Flow. This is controlled through the 'redirectOptions' attribute.</p>
-        <h3>URL</h3>
-        <p>Using the 'urlName' variable, set the desired URL you wish the Flow to navigate to once finished.</p>
-        <h3>sObject</h3>
-        <p>Using the 'sObjectVariableName' variable, set this variable to the name of the sObject Variable you created in the Flow you wish to navigate to. It will look for the ID value of the sObject Variable.</p>
-        <h3>Dynamic Routing</h3>
-        <p>There are instances where you may require a dynamic return location for the Visual Workflow implemented. This will require you to choose the 'Dynamic Routing' option in the Redirect Options list.</p>
-        <p>To ensure Dynamic Routing works successfully in the Visual Workflow Wrapper, it will require you to create the following standard variables as 'Output Only' in your Visual Workflow:</p>
-        <ul>
-        	<li>RedirectOption - set the data type as 'Text'. In the flow, set this variable to either 'sObject' or 'URL'.</li>
-            <li>UrlOption - set the data type as 'Text'. In the flow, set this variable to the URL you wish to navigate to. This value is used if the redirect option is set to 'URL'.</li>
-            <li>SObjectVariableOption - set the data type as 'Text'. In the flow, set this variable to the name of the sObject Variable created in the Flow you wish to navigate to. It will look for the ID value of the sObject Variable. This value is used if the redirect option is set to 'sObject'.</li>
-        </ul>
-        <p>Throughout the Visual Workflow you have configured, set these three variables to the desired redirect navigation outcome.</p>
+<h2>Set Return Location</h2>
+<p>There are a number of options that can be set to control the return behaviour of the Flow. This is controlled through the 'redirectOptions' attribute.</p>
+<h3>URL</h3>
+<p>Using the 'urlName' variable, set the desired URL you wish the Flow to navigate to once finished.</p>
+<h3>sObject</h3>
+<p>Using the 'sObjectVariableName' variable, set this variable to the name of the sObject Variable you created in the Flow you wish to navigate to. It will look for the ID value of the sObject Variable.</p>
+<h3>Dynamic Routing</h3>
+<p>There are instances where you may require a dynamic return location for the Visual Workflow implemented. This will require you to choose the 'Dynamic Routing' option in the Redirect Options list.</p>
+<p>To ensure Dynamic Routing works successfully in the Visual Workflow Wrapper, it will require you to create the following standard variables as 'Output Only' in your Visual Workflow:</p>
+<ul>
+        <li>RedirectOption - set the data type as 'Text'. In the flow, set this variable to either 'sObject' or 'URL'.</li>
+    <li>UrlOption - set the data type as 'Text'. In the flow, set this variable to the URL you wish to navigate to. This value is used if the redirect option is set to 'URL'.</li>
+    <li>SObjectVariableOption - set the data type as 'Text'. In the flow, set this variable to the name of the sObject Variable created in the Flow you wish to navigate to. It will look for the ID value of the sObject Variable. This value is used if the redirect option is set to 'sObject'.</li>
+</ul>
+<p>Throughout the Visual Workflow you have configured, set these three variables to the desired redirect navigation outcome.</p>
