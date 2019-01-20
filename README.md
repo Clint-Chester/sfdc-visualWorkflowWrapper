@@ -1,9 +1,11 @@
 # Visual Workflow Wrapper
 
-<p>The Visual Workflow Wrapper is designed to provide additional functionality that currently isn't delivered with the standard Flows component. This wrapper provides the following features:</p>
+<p><b>UPDATE:</b> Since the Winter '19 Release, you can now expose Flows to Guest Users in Communities natively, and the Summer '18 Release allowed for local actions so that you could control navigation with Lightning components. Therefore this isn't that useful anymore! However will keep this up for historical / relic purposes.</p>
+
+<p>The Visual Workflow Wrapper is designed to provide additional functionality that wasn't delivered with the standard Flows component prior to the Winter '19 Release. This wrapper provides the following features:</p>
         <ul>
         	<li>Expose Flows to Guest Users in Communities</li>
-          <li>Set the return location of the Flow to a URL or sObject record</li>
+                <li>Set the return location of the Flow to a URL or sObject record</li>
         </ul>
 
 <a href="https://githubsfdeploy.herokuapp.com?owner=Clint-Chester&repo=sfdc-visualWorkflowWrapper&ref=master">
